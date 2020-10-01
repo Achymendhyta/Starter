@@ -1,7 +1,3 @@
 # Starter
 
-Hello,
-dont take my account too seriously, i'm not a professional in this kind of programming world.
-I started to learn about web programming since 2016.
-
-:3
+This is my starting point in learning programming, especially web-programming. I started to learn web programming since 2016. I made my first website with various project in it such as HTML, CSS, JavaScript, PHP, and mySQL.
