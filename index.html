@@ -1,68 +1,292 @@
+<!doctype html>
 <html>
-	<head>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-	<script src="bootstrap/jquery.min.js"></script>
-	<script src="bootstrap/bootstrap.min.js"></script>
-	<title>PHP Project</title>
-	</head>
-	<body>
-		<div align="center">
-			<h1><li class="fa fa-spin fa-gear"></li>&nbsp;&nbsp;PHP <font color="orange">Project</font></h1>
-			<hr>
-			<table class="table-bordered table-condensed table-hover table-responsive table-striped">
-				<tr><th scope="col" colspan="3"><center><b>Item List</b></center></th></tr>
-				<tr>
-					<td>1</td>
-					<td width="200"><center>textGenerator</center></td>
-					<td height="30" width="100"><center><a href="textGenerator.php"><button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td width="200"><center>apkCalculator</center></td>
-					<td height="30" width="100"><center><a href="apkCalculator.php"><button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td width="200"><center>phpRepitition</center></td>
-					<td height="30" width="100"><center><a href="phpRepetition.php"><button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-			</table>
-			<br>
-			<table class="table-bordered table-condensed table-hover table-responsive table-striped">
-				<tr><th scope="col" colspan="3"><center><b>Database Files</b></center></th></tr>
-				<tr>
-					<td>1</td>
-					<td width="200"><center>submitData</center></td>
-					<td height="30" width="100"><center><a href="submitData.php"><button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td width="200"><center>Student List</center></td>
-					<td height="30" width="100"><center><a href="biodata.php">
-					<button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-			</table>
-			<br>
-			<table class="table-bordered table-condensed table-hover table-responsive table-striped">
-				<tr><th scope="col" colspan="3"><center><b>Supporting Files</b></center></th></tr>
-				<tr>
-					<td>1</td>
-					<td width="200"><center>Connect</center></td>
-					<td height="30" width="100"><center><a href="koneksi.php"><button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td width="200"><center>Delete</center></td>
-					<td height="30" width="100"><center><a href="delete.php"><button class="btn-link btn-block"><li class="fa fa-sign-in"></li></button></a></center></td>
-				</tr>
-				<tr>
-					<td colspan="3"><i><center>It seems nothing.</center></i></td>
-				</tr>
-			</table>
-			<br>
-			<hr>
-			<footer style="margin-bottom:30px;"><center>Homepage | PHP Project 2016<br>Made by <b>Farell Faiz <li class="fa fa-check-circle"></li></b></center></footer>
-		</div>
-	</body>
+
+<head>
+    <meta charset="utf-8">
+    <title>egorithm.</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        html {
+            width: 100vw;
+        }
+        
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        a {
+            color: #000;
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Section Header -->
+    <div align="center">
+        <div class="well" style="height: 200px"><br>
+            <h1>
+                <li class="fa fa-cog fa-spin"></li>&nbsp; <b><font face="ubuntu">egorithm</font></b>
+                <font color="orange">Project</font>
+            </h1>
+            <font face="ubuntu"><i>a project compilation of html, css, and php training</font></i>
+        </div>
+    </div>
+    <!-- Section Header End -->
+
+    <br><br>
+    <!-- Section Author -->
+    <div class="row">
+        <div class="col-lg-4" align="center">
+            <h1>
+                <li class="fa fa-user-circle-o fa-5x"></li>
+            </h1>
+        </div>
+        <div class="col-lg-6" align="left">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>
+                        <font face="ubuntu">
+                            Farell Faiz<br>
+                        </font>
+                        <font face="calibri">
+                            Firmansyah
+                        </font>
+                    </h1>
+                </div>
+                <div class="col-md-1" style="padding-top: 27px; margin-left: -50px;">
+                    <span class="fa fa-check-circle fa-2x"></span>
+                </div>
+            </div>
+            <hr>
+            <li class="fa fa-map-marker"></li>&nbsp; <b>Bandung</b>, Indonesia.
+        </div>
+    </div>
+    <br><br><br>
+    <!-- Section Author End -->
+
+    <!-- Section HCP -->
+    <div class="row" align="center" style="background-color: #252525; height: 500px">
+        <font face="ubuntu" size="+1"><br>
+            <h2>
+                <font color="white">
+                    <li class="fa fa-spinner fa-pulse"></li>&nbsp; Skill Progress</font>
+            </h2>
+            <br><br>
+
+            <div class="col-lg-4">
+                <span class="fa-stack fa-5x">
+						<li class="fa fa-circle fa-stack-2x fa-inverse"></li>
+						<li class="fa fa-align-left fa-stack-1x"></li>
+					</span><br>
+                <strong><p><font color="white">&#8249;html&#8250;</font></p></strong>
+                <hr>
+                <div class="progress" style="width: 75%;">
+                    <div class="progress-bar progress progress-bar-striped progress-bar-warning" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <span class="fa-stack fa-5x">
+						<li class="fa fa-circle fa-stack-2x fa-inverse"></li>
+						<li class="fa fa-css3 fa-stack-1x"></li>
+					</span><br>
+                <strong><p><font color="white">css{}</font></p></strong>
+                <hr>
+                <div class="progress" style="width: 75%;">
+                    <div class="progress-bar progress progress-bar-striped progress-bar-warning" style="width: 45%;"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <span class="fa-stack fa-5x">
+					  <li class="fa fa-circle fa-stack-2x fa-inverse"></li>
+					  <li class="fa fa-code fa-stack-1x"></li>
+				  </span><br>
+                <strong><p><font color="white">php</font></p></strong>
+                <hr>
+                <div class="progress" style="width: 75%;">
+                    <div class="progress-bar progress progress-bar-striped progress-bar-warning" style="width: 30%;"></div>
+                </div>
+            </div>
+        </font>
+    </div>
+    <!-- Section HCP End -->
+
+    <br>
+
+    <!-- Section Project List -->
+    <div align="center">
+        <h1>
+            <li class="fa fa-th-large"></li>&nbsp;
+            <font face="ubuntu">Project
+                <font color="orange">List</font>
+            </font>
+        </h1>
+        <hr>
+    </div>
+    <!-- First -->
+    <div class="row" align="center" style="height: 300px"><br><br>
+        <div class="col-lg-6">
+            <font size="+2" face="ubuntu">
+                <li class="fa fa-calculator fa-5x"></li>
+                <h3>Calculator</h3>
+            </font>
+            <a href="calculator/index.php">
+                <font color="black">
+                    <button class="btn" style="width: 50%"><li class="fa fa-exclamation-triangle"></li>&nbsp; Something <strong>error</strong>. Go ahead?</button>
+                </font>
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <font size="+2" face="ubuntu">
+                <li class="fa fa-hand-peace-o fa-5x"></li>
+                <h3>vote!</h3>
+            </font>
+            <a href="vote!/formPertanyaan.php">
+                <font color="black">
+                    <button class="btn" style="width: 50%"><li class="fa fa-circle-o-notch fa-spin"></li>&nbsp; Work in Progress</button>
+                </font>
+            </a>
+        </div>
+    </div>
+    <!-- Second -->
+    <div class="row" align="center" style="height: 300px;"><br><br>
+        <div class="col-lg-6">
+            <font size="+2" face="ubuntu">
+                <li class="fa fa-file-text fa-5x"></li>
+                <h3>
+                    <div class="badge">excel</div>
+                    Importer</h3>
+            </font>
+            <a href="excel/member.php">
+                <font color="black">
+                    <button class="btn" style="width: 50%"><li class="fa fa-exclamation-triangle"></li>&nbsp; Something <strong>error</strong>. Go ahead?</button>
+                </font>
+            </a>
+        </div>
+
+        <div class="col-lg-6">
+            <font size="+2" face="ubuntu">
+                <li class="fa fa-qrcode fa-5x"></li>
+                <h3>Bar & QR //code</h3>
+            </font>
+            <a href="scancode/index.html">
+                <font color="black">
+                    <button class="btn" style="width: 50%"><li class="fa fa-rocket"></li>&nbsp; Let's Go!</button>
+                </font>
+            </a>
+        </div>
+    </div>
+    <!-- Third -->
+    <div class="row" align="center" style="height: 300px;"><br><br>
+        <div class="col-lg-6">
+            <font size="+2" face="ubuntu">
+                <li class="fa fa-file-code-o fa-5x"></li>
+                <h3>Other (old interface)</h3>
+            </font>
+            <a href="others/index.html">
+                <font color="black">
+                    <button class="btn" style="width: 50%"><li class="fa fa-rocket"></li>&nbsp; Let's Go!</button>
+                </font>
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <font size="+2" face="ubuntu">
+                <li class="fa fa-check fa-5x"></li>
+                <h3>To Be Added</h3>
+            </font>
+            <font color="black">
+                <button class="btn disabled" style="width: 50%"><li class="fa fa-circle-o-notch fa-spin"></li>&nbsp; Working on Idea</button>
+            </font>
+        </div>
+    </div>
+
+    <div class="col-lg-">
+
+    </div>
+    </div><br>
+    <!-- Section Project List End -->
+
+    <!-- Section Supporting Files -->
+    <div align="center">
+        <hr style="width: 50%;">
+        <h4>
+            <font face="calibri light">Supporting Files</font>
+        </h4>
+        <hr style="width: 50%;">
+        <table class="table-condensed table-hover table-responsive" width="50%">
+            <tr>
+                <td>1</td>
+                <td>koneksi.php</td>
+                <td>for <strong>vote!</strong></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>import_member.php</td>
+                <td>for <strong><div class="badge">excel</div> Importer</strong></td>
+            </tr>
+        </table>
+        <hr style="width: 50%">
+
+        <!-- Alert -->
+        <div class="alert alert-info alert-dismissable show" role="alert" align="left" style="width: 60%; padding-left: 30px; height: 220px;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+   					<span aria-hidden="true">&times;</span>
+  				</button>
+            <h3 style="margin-top: 1px">Well Done!</h3>
+            <p>Aww yeah, thanks for viewing my -umm yeah, portofolio page. New project will out soon and will be compilated here of course with the pagination system on the <em>project list</em> section.</p>
+            <hr style="width: 100%;">
+            <p>Whenever you need my help or want an updates about my project, <strong>please subscribe to my newsletter</strong>.</p>
+            <div class="row" style="padding-top: 10px;">
+                <form id="nl" name="nl" method="post">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><li class="fa fa-user"></li></span>
+                            <input type="text" class="form-control" placeholder="Your Name (optional)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><li class="fa fa-envelope"></li></span>
+                            <input type="email" class="form-control" required placeholder="example@urmail.com">
+                            <span class="input-group-btn"><button class="btn btn-info" type="submit" name="sb"><span class="fa fa-envelope-open"></span>&nbsp; Subscribe</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Alert End -->
+
+        <br><br>
+    </div>
+    <!-- Section Supporting Files End -->
+
+    <!-- Section Footer -->
+    <footer>
+        <div style="height: 100px; background-color: #f5f5f5; padding-top: 30px;" align="center">
+            <button class="btn btn-link"><span class="fa fa-facebook-f fa-2x"></span></button>
+            <button class="btn btn-link"><span class="fa fa-twitter fa-2x"></span></button>
+            <button class="btn btn-link"><span class="fa fa-google-plus fa-2x"></span></button>
+            <button class="btn btn-link"><span class="fa fa-github fa-2x"></span></button>
+            <button class="btn btn-link"><span class="fa fa-steam fa-2x"></span></button>
+            <button class="btn btn-link"><span class="fa fa-deviantart fa-2x"></span></button>
+            <button class="btn btn-link"><span class="fa fa-instagram fa-2x"></span></button>
+        </div>
+        <div style="height: 30px; background-color: #252525; padding-top: 10px; color: white; padding-left: 10px;">
+            <div align="left">
+                <li class="fa fa-cog fa-spin"></li>&nbsp; <b><font face="ubuntu">egorithm</font></b> Project
+            </div>
+        </div>
+    </footer>
+    <!-- Section Footer End -->
+</body>
+
 </html>
